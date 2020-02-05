@@ -1,24 +1,30 @@
-Package: easyr
+Package: jordan
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Just Other R Data Analytic Nuggets
 Version: 0.1.0
-Author: person("Jordan Mark", "Barbone", email = "jmbarbone@gmail.com", role = c("aut", "crh", "cre", ))
+Author: person(given  = "Jordan Mark",
+               family = "Barbone",
+               role   = c("aut", "crh", "cre"),
+               email  = "jmbarbone@gmail.com")
 Maintainer: Jordan Mark Barbone <jmbarbone@gmail.comt>
-Description: A set of functions and wrappers for making my day (and maybe others') easyr.
-    Mostly just a private package.
+Description: Contains a variety of functions and wrappers developed for personally and professional use.
 License: MIT + file LICENSE
+URL: https://github.com/jmbarbone/jordan
+BugReports: https://github.com/jmbarbone/jordan/issues
 Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 3.6)
 Imports: 
     dplyr,
-    purrr,
+    magrittr,
     tibble,
-    tidyr,
+    rlang,
     stats,
-    knitr,
-    stringr
+    scales
 Suggests: 
+    Hmisc,
+    knitr,
+    openxlsx,
     testthat
 RoxygenNote: 7.0.2
