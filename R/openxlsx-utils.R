@@ -118,11 +118,12 @@ xlsxopts.openxlsx.Workbook <- function(wb, x) {
 
 #' @export
 # List of all values
-openxlsx_opts <- list(
+
+options('openxlsx' = list(
   globalOverwrite = FALSE,
   overwriteDataSheet = TRUE,
   overwriteFile = FALSE,
-
+  gridExpand = TRUE,
   gridLines = TRUE,
   tabColour = NULL,
   zoom = 100,
@@ -150,4 +151,4 @@ openxlsx_opts <- list(
   lastColumn = FALSE,
 
   NULL
-)
+))
